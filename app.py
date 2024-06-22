@@ -43,7 +43,6 @@ def predict():
         return render_template("index.html", prediction_text='{}'.format(prediction))
     except Exception as e:
         return jsonify({"error": str(e)})
-if __name__ == '__main__':
-    app.run(debug=True, port= 10000)
+
     
     
